@@ -1,0 +1,21 @@
+body{
+  font-family: "Courier New", monospace;
+  margin: 0 0;
+  text-align: center;
+  background: #000;
+}
+
+.container {
+  margin: 100px 30px 0px 30px;
+}
+
+h1, p{
+  border:1px solid #ffffff;
+  padding: 20px 10px 20px 10px;
+  color:#fff300;
+}
+
+p:hover  {
+  border: 3px solid #fff300;
+  color: #ffffff;
+}
