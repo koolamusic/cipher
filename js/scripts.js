@@ -8,12 +8,15 @@ return (initialPrompt.charAt(0) + initialPrompt.charAt(initialPrompt.length-1)).
 //return the first anc second characters of the second function
 //var notReverse = function () {return takeFirstLast(); }
 
-var reverse = function() {
-  return takeFirstLast().split("").reverse().join("");
+var reverse = function(reverseId) {
+  return reverseId.split("").reverse().join("");
 };
 
+//variable to run reverse on reverseId on takeFirstLast function variable
+//var rVerse = alert(reverse(takeFirstLast()));
+
 //Create a third function that will reverse the top two functions above  and concatenate them with the initialPrompt
-var callTwo = function() {return initialPrompt + reverse();
+var callTwo = function() {return initialPrompt + reverse(takeFirstLast());
 };
 
 //create a fourth function to count the number of leters in the original sentence divide by 2 and round to a whole number
@@ -22,4 +25,7 @@ var countLetters = function(counter) { return initialPrompt.charAt(Math.floor(co
 alert(countLetters(initialPrompt));  **/
 //alert(countLetters(initialPrompt));
 
-var finalResult = alert(reverse(countLetters()))
+var makeReverse = alert(reverse(countLetters(initialPrompt)));
+
+
+// Write jQuery function here..
